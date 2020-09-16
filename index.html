@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tap Cricket</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Tap Cricket</h1>
+    <hr>
+    <div>
+        <h2>Choose to bat or bowl</h2>
+        <button class="myButton" id="buttonBat">Bat</button>
+        <button class="myButton" id="buttonBowl">Bowl</button>
+        <hr>
+    </div>
+    
+	<h2> Tap any number from 0 to 9 on your keyboard.<h2>
+    <input type="text" name="player" placeholder="User input" id="userInput">
+    <h6></h6>
+    <hr>
+    <input type="hidden" id="printWicketStatus">  
+    <h2></h2>
+    <!-- wicketStatus -->
+    <section class="container">
+        <div class= "left-half">
+            <h2>Your Total</h2>
+            <p id="printPlayerTotal">__</p>
+            <!-- Total Score printed regularly totalScore -->
+            <h3>Your Instantaneous Run</h3>
+            <h5 id="printInitialRun">__</h5>
+            <!-- The input that the player just gave. initialRun -->
+        </div>
+        <div class="right-half">
+            <h2>CPU Total</h2>
+            <h4 id="printCpuTotal">__</h4>
+            <!-- Total Score printed regularly totalScore -->
+            <h3>CPU value</h3>
+            <h5 id="printCpuRun">__</h5>
+            <!-- Random number entered by cpu cpuRun -->
+        </div>
+    </section>
+    <div class = 'containerp projects'>
+        <h1 class="output" id="comment"></h1>
+     <div class="overlay"></div>
+     </div>
+</body>
+<script type="text/javascript" src="cricket.js"></script>
+</html>
